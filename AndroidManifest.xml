@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="co.za.MobileDev.FlashLightWidget"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="19"/>
+    <permission android:name="android.permission.FLASHLIGHT"
+                android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+                android:protectionLevel="normal" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+        <receiver android:name=".FlashLightWidget" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/flashlight_widget_provider" />
+        </receiver>
+    </application>
+</manifest>
