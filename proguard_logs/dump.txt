@@ -1,0 +1,385 @@
+_____________________________________________________________________
++ Program class: co/za/MobileDev/FlashLightWidget/FlashLightWidget
+  Superclass:    android/appwidget/AppWidgetProvider
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class co.za.MobileDev.FlashLightWidget.FlashLightWidget extends android.appwidget.AppWidgetProvider
+
+Interfaces (count = 0):
+
+Constant Pool (count = 129):
+  + Integer [2130837505]
+  + Integer [2130837506]
+  + Integer [2130903040]
+  + Integer [2131099649]
+  + String [flashLightWidgetButtonClick]
+  + String [off]
+  + String [torch]
+  + Class [android/app/PendingIntent]
+  + Class [android/appwidget/AppWidgetManager]
+  + Class [android/appwidget/AppWidgetProvider]
+  + Class [android/content/ComponentName]
+  + Class [android/content/Context]
+  + Class [android/content/Intent]
+  + Class [android/hardware/Camera]
+  + Class [android/hardware/Camera$Parameters]
+  + Class [android/widget/RemoteViews]
+  + Class [co/za/MobileDev/FlashLightWidget/FlashLightWidget]
+  + Class [java/lang/Exception]
+  + Class [java/lang/Object]
+  + Class [java/lang/String]
+  + Fieldref [co/za/MobileDev/FlashLightWidget/FlashLightWidget.a Z]
+  + Fieldref [co/za/MobileDev/FlashLightWidget/FlashLightWidget.b Landroid/hardware/Camera;]
+  + Methodref [android/app/PendingIntent.getBroadcast (Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;]
+  + Methodref [android/appwidget/AppWidgetManager.getInstance (Landroid/content/Context;)Landroid/appwidget/AppWidgetManager;]
+  + Methodref [android/appwidget/AppWidgetManager.updateAppWidget (Landroid/content/ComponentName;Landroid/widget/RemoteViews;)V]
+  + Methodref [android/appwidget/AppWidgetProvider.<init> ()V]
+  + Methodref [android/appwidget/AppWidgetProvider.onReceive (Landroid/content/Context;Landroid/content/Intent;)V]
+  + Methodref [android/content/ComponentName.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [android/content/Context.getPackageName ()Ljava/lang/String;]
+  + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [android/content/Intent.getAction ()Ljava/lang/String;]
+  + Methodref [android/content/Intent.setAction (Ljava/lang/String;)Landroid/content/Intent;]
+  + Methodref [android/hardware/Camera.getParameters ()Landroid/hardware/Camera$Parameters;]
+  + Methodref [android/hardware/Camera.open ()Landroid/hardware/Camera;]
+  + Methodref [android/hardware/Camera.release ()V]
+  + Methodref [android/hardware/Camera.setParameters (Landroid/hardware/Camera$Parameters;)V]
+  + Methodref [android/hardware/Camera$Parameters.setFlashMode (Ljava/lang/String;)V]
+  + Methodref [android/widget/RemoteViews.<init> (Ljava/lang/String;I)V]
+  + Methodref [android/widget/RemoteViews.setImageViewResource (II)V]
+  + Methodref [android/widget/RemoteViews.setOnClickPendingIntent (ILandroid/app/PendingIntent;)V]
+  + Methodref [co/za/MobileDev/FlashLightWidget/FlashLightWidget.a (Landroid/content/Context;Ljava/lang/String;)Landroid/app/PendingIntent;]
+  + Methodref [java/lang/Exception.printStackTrace ()V]
+  + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+  + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + NameAndType [<init> (Ljava/lang/String;I)V]
+  + NameAndType [a (Landroid/content/Context;Ljava/lang/String;)Landroid/app/PendingIntent;]
+  + NameAndType [a Z]
+  + NameAndType [b Landroid/hardware/Camera;]
+  + NameAndType [equals (Ljava/lang/Object;)Z]
+  + NameAndType [getAction ()Ljava/lang/String;]
+  + NameAndType [getBroadcast (Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;]
+  + NameAndType [getClass ()Ljava/lang/Class;]
+  + NameAndType [getInstance (Landroid/content/Context;)Landroid/appwidget/AppWidgetManager;]
+  + NameAndType [getPackageName ()Ljava/lang/String;]
+  + NameAndType [getParameters ()Landroid/hardware/Camera$Parameters;]
+  + NameAndType [onReceive (Landroid/content/Context;Landroid/content/Intent;)V]
+  + NameAndType [open ()Landroid/hardware/Camera;]
+  + NameAndType [printStackTrace ()V]
+  + NameAndType [release ()V]
+  + NameAndType [setAction (Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [setFlashMode (Ljava/lang/String;)V]
+  + NameAndType [setImageViewResource (II)V]
+  + NameAndType [setOnClickPendingIntent (ILandroid/app/PendingIntent;)V]
+  + NameAndType [setParameters (Landroid/hardware/Camera$Parameters;)V]
+  + NameAndType [updateAppWidget (Landroid/content/ComponentName;Landroid/widget/RemoteViews;)V]
+  + Utf8 [()Landroid/hardware/Camera$Parameters;]
+  + Utf8 [()Landroid/hardware/Camera;]
+  + Utf8 [()Ljava/lang/Class;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(II)V]
+  + Utf8 [(ILandroid/app/PendingIntent;)V]
+  + Utf8 [(Landroid/content/ComponentName;Landroid/widget/RemoteViews;)V]
+  + Utf8 [(Landroid/content/Context;)Landroid/appwidget/AppWidgetManager;]
+  + Utf8 [(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;]
+  + Utf8 [(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V]
+  + Utf8 [(Landroid/content/Context;Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/String;)Landroid/app/PendingIntent;]
+  + Utf8 [(Landroid/hardware/Camera$Parameters;)V]
+  + Utf8 [(Ljava/lang/Object;)Z]
+  + Utf8 [(Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;I)V]
+  + Utf8 [<clinit>]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/hardware/Camera;]
+  + Utf8 [StackMapTable]
+  + Utf8 [Z]
+  + Utf8 [a]
+  + Utf8 [android/app/PendingIntent]
+  + Utf8 [android/appwidget/AppWidgetManager]
+  + Utf8 [android/appwidget/AppWidgetProvider]
+  + Utf8 [android/content/ComponentName]
+  + Utf8 [android/content/Context]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/hardware/Camera]
+  + Utf8 [android/hardware/Camera$Parameters]
+  + Utf8 [android/widget/RemoteViews]
+  + Utf8 [b]
+  + Utf8 [co/za/MobileDev/FlashLightWidget/FlashLightWidget]
+  + Utf8 [equals]
+  + Utf8 [flashLightWidgetButtonClick]
+  + Utf8 [getAction]
+  + Utf8 [getBroadcast]
+  + Utf8 [getClass]
+  + Utf8 [getInstance]
+  + Utf8 [getPackageName]
+  + Utf8 [getParameters]
+  + Utf8 [java/lang/Exception]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/String]
+  + Utf8 [off]
+  + Utf8 [onReceive]
+  + Utf8 [onUpdate]
+  + Utf8 [open]
+  + Utf8 [printStackTrace]
+  + Utf8 [release]
+  + Utf8 [setAction]
+  + Utf8 [setFlashMode]
+  + Utf8 [setImageViewResource]
+  + Utf8 [setOnClickPendingIntent]
+  + Utf8 [setParameters]
+  + Utf8 [torch]
+  + Utf8 [updateAppWidget]
+
+Fields (count = 2):
+  + Field:        a Z
+    Access flags: 0xa
+      = private static boolean a
+  + Field:        b Landroid/hardware/Camera;
+    Access flags: 0xa
+      = private static android.hardware.Camera b
+
+Methods (count = 5):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public FlashLightWidget()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #26
+        + Methodref [android/appwidget/AppWidgetProvider.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onUpdate(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V
+    Access flags: 0x1
+      = public void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 50, locals = 6, stack = 5):
+      [0] new #16
+        + Class [android/widget/RemoteViews]
+      [3] dup
+      [4] aload_1 v1
+      [5] invokevirtual #29
+        + Methodref [android/content/Context.getPackageName ()Ljava/lang/String;]
+      [8] ldc #3
+        + Integer [2130903040]
+      [10] invokespecial #38
+        + Methodref [android/widget/RemoteViews.<init> (Ljava/lang/String;I)V]
+      [13] astore v4
+      [15] new #11
+        + Class [android/content/ComponentName]
+      [18] dup
+      [19] aload_1 v1
+      [20] ldc #17
+        + Class [co/za/MobileDev/FlashLightWidget/FlashLightWidget]
+      [22] invokespecial #28
+        + Methodref [android/content/ComponentName.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [25] astore v5
+      [27] aload v4
+      [29] ldc #4
+        + Integer [2131099649]
+      [31] aload_0 v0
+      [32] aload_1 v1
+      [33] ldc #5
+        + String [flashLightWidgetButtonClick]
+      [35] invokevirtual #41
+        + Methodref [co/za/MobileDev/FlashLightWidget/FlashLightWidget.a (Landroid/content/Context;Ljava/lang/String;)Landroid/app/PendingIntent;]
+      [38] invokevirtual #40
+        + Methodref [android/widget/RemoteViews.setOnClickPendingIntent (ILandroid/app/PendingIntent;)V]
+      [41] aload_2 v2
+      [42] aload v5
+      [44] aload v4
+      [46] invokevirtual #25
+        + Methodref [android/appwidget/AppWidgetManager.updateAppWidget (Landroid/content/ComponentName;Landroid/widget/RemoteViews;)V]
+      [49] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    Access flags: 0x1
+      = public void onReceive(android.content.Context,android.content.Intent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 170, locals = 5, stack = 4):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] aload_2 v2
+      [3] invokespecial #27
+        + Methodref [android/appwidget/AppWidgetProvider.onReceive (Landroid/content/Context;Landroid/content/Intent;)V]
+      [6] ldc #5
+        + String [flashLightWidgetButtonClick]
+      [8] aload_2 v2
+      [9] invokevirtual #31
+        + Methodref [android/content/Intent.getAction ()Ljava/lang/String;]
+      [12] invokevirtual #44
+        + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
+      [15] ifeq +154 (target=169)
+      [18] new #16
+        + Class [android/widget/RemoteViews]
+      [21] dup
+      [22] aload_1 v1
+      [23] invokevirtual #29
+        + Methodref [android/content/Context.getPackageName ()Ljava/lang/String;]
+      [26] ldc #3
+        + Integer [2130903040]
+      [28] invokespecial #38
+        + Methodref [android/widget/RemoteViews.<init> (Ljava/lang/String;I)V]
+      [31] astore_3 v3
+      [32] getstatic #21
+        + Fieldref [co/za/MobileDev/FlashLightWidget/FlashLightWidget.a Z]
+      [35] ifeq +57 (target=92)
+      [38] invokestatic #34
+        + Methodref [android/hardware/Camera.open ()Landroid/hardware/Camera;]
+      [41] putstatic #22
+        + Fieldref [co/za/MobileDev/FlashLightWidget/FlashLightWidget.b Landroid/hardware/Camera;]
+      [44] getstatic #22
+        + Fieldref [co/za/MobileDev/FlashLightWidget/FlashLightWidget.b Landroid/hardware/Camera;]
+      [47] invokevirtual #33
+        + Methodref [android/hardware/Camera.getParameters ()Landroid/hardware/Camera$Parameters;]
+      [50] astore v4
+      [52] aload v4
+      [54] ldc #7
+        + String [torch]
+      [56] invokevirtual #37
+        + Methodref [android/hardware/Camera$Parameters.setFlashMode (Ljava/lang/String;)V]
+      [59] getstatic #22
+        + Fieldref [co/za/MobileDev/FlashLightWidget/FlashLightWidget.b Landroid/hardware/Camera;]
+      [62] aload v4
+      [64] invokevirtual #36
+        + Methodref [android/hardware/Camera.setParameters (Landroid/hardware/Camera$Parameters;)V]
+      [67] goto +10 (target=77)
+      [70] astore v4
+      [72] aload v4
+      [74] invokevirtual #42
+        + Methodref [java/lang/Exception.printStackTrace ()V]
+      [77] aload_3 v3
+      [78] ldc #4
+        + Integer [2131099649]
+      [80] ldc #2
+        + Integer [2130837506]
+      [82] invokevirtual #39
+        + Methodref [android/widget/RemoteViews.setImageViewResource (II)V]
+      [85] iconst_0
+      [86] putstatic #21
+        + Fieldref [co/za/MobileDev/FlashLightWidget/FlashLightWidget.a Z]
+      [89] goto +58 (target=147)
+      [92] getstatic #22
+        + Fieldref [co/za/MobileDev/FlashLightWidget/FlashLightWidget.b Landroid/hardware/Camera;]
+      [95] invokevirtual #33
+        + Methodref [android/hardware/Camera.getParameters ()Landroid/hardware/Camera$Parameters;]
+      [98] astore v4
+      [100] aload v4
+      [102] ldc #6
+        + String [off]
+      [104] invokevirtual #37
+        + Methodref [android/hardware/Camera$Parameters.setFlashMode (Ljava/lang/String;)V]
+      [107] getstatic #22
+        + Fieldref [co/za/MobileDev/FlashLightWidget/FlashLightWidget.b Landroid/hardware/Camera;]
+      [110] aload v4
+      [112] invokevirtual #36
+        + Methodref [android/hardware/Camera.setParameters (Landroid/hardware/Camera$Parameters;)V]
+      [115] getstatic #22
+        + Fieldref [co/za/MobileDev/FlashLightWidget/FlashLightWidget.b Landroid/hardware/Camera;]
+      [118] invokevirtual #35
+        + Methodref [android/hardware/Camera.release ()V]
+      [121] aconst_null
+      [122] putstatic #22
+        + Fieldref [co/za/MobileDev/FlashLightWidget/FlashLightWidget.b Landroid/hardware/Camera;]
+      [125] goto +10 (target=135)
+      [128] astore v4
+      [130] aload v4
+      [132] invokevirtual #42
+        + Methodref [java/lang/Exception.printStackTrace ()V]
+      [135] aload_3 v3
+      [136] ldc #4
+        + Integer [2131099649]
+      [138] ldc #1
+        + Integer [2130837505]
+      [140] invokevirtual #39
+        + Methodref [android/widget/RemoteViews.setImageViewResource (II)V]
+      [143] iconst_1
+      [144] putstatic #21
+        + Fieldref [co/za/MobileDev/FlashLightWidget/FlashLightWidget.a Z]
+      [147] new #11
+        + Class [android/content/ComponentName]
+      [150] dup
+      [151] aload_1 v1
+      [152] ldc #17
+        + Class [co/za/MobileDev/FlashLightWidget/FlashLightWidget]
+      [154] invokespecial #28
+        + Methodref [android/content/ComponentName.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [157] astore v4
+      [159] aload_1 v1
+      [160] invokestatic #24
+        + Methodref [android/appwidget/AppWidgetManager.getInstance (Landroid/content/Context;)Landroid/appwidget/AppWidgetManager;]
+      [163] aload v4
+      [165] aload_3 v3
+      [166] invokevirtual #25
+        + Methodref [android/appwidget/AppWidgetManager.updateAppWidget (Landroid/content/ComponentName;Landroid/widget/RemoteViews;)V]
+      [169] return
+      Code attribute exceptions (count = 2):
+      - ExceptionInfo (38 -> 67: 70):
+      + Class [java/lang/Exception]
+      - ExceptionInfo (92 -> 125: 128):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 7):
+        - [70] Var: [a:co/za/MobileDev/FlashLightWidget/FlashLightWidget][a:android/content/Context][a:android/content/Intent][a:android/widget/RemoteViews], Stack: [a:java/lang/Exception]
+        - [77] Var: ..., Stack: (empty)
+        - [92] Var: ..., Stack: (empty)
+        - [128] Var: ..., Stack: [a:java/lang/Exception]
+        - [135] Var: ..., Stack: (empty)
+        - [147] Var: ..., Stack: (empty)
+        - [169] Var: -1, Stack: (empty)
+  + Method:       a(Landroid/content/Context;Ljava/lang/String;)Landroid/app/PendingIntent;
+    Access flags: 0x4
+      = protected android.app.PendingIntent a(android.content.Context,java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 27, locals = 4, stack = 4):
+      [0] new #13
+        + Class [android/content/Intent]
+      [3] dup
+      [4] aload_1 v1
+      [5] aload_0 v0
+      [6] invokevirtual #43
+        + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
+      [9] invokespecial #30
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [12] astore_3 v3
+      [13] aload_3 v3
+      [14] aload_2 v2
+      [15] invokevirtual #32
+        + Methodref [android/content/Intent.setAction (Ljava/lang/String;)Landroid/content/Intent;]
+      [18] pop
+      [19] aload_1 v1
+      [20] iconst_0
+      [21] aload_3 v3
+      [22] iconst_0
+      [23] invokestatic #23
+        + Methodref [android/app/PendingIntent.getBroadcast (Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;]
+      [26] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       <clinit>()V
+    Access flags: 0x8
+      = static void <clinit>()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 9, locals = 0, stack = 1):
+      [0] iconst_1
+      [1] putstatic #21
+        + Fieldref [co/za/MobileDev/FlashLightWidget/FlashLightWidget.a Z]
+      [4] aconst_null
+      [5] putstatic #22
+        + Fieldref [co/za/MobileDev/FlashLightWidget/FlashLightWidget.b Landroid/hardware/Camera;]
+      [8] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+

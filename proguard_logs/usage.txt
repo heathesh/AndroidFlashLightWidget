@@ -1,0 +1,12 @@
+co.za.MobileDev.FlashLightWidget.BuildConfig
+co.za.MobileDev.FlashLightWidget.FlashLightWidget:
+    private static final java.lang.String FLASH_BUTTON_CLICKED
+co.za.MobileDev.FlashLightWidget.Manifest
+co.za.MobileDev.FlashLightWidget.Manifest$permission
+co.za.MobileDev.FlashLightWidget.R
+co.za.MobileDev.FlashLightWidget.R$attr
+co.za.MobileDev.FlashLightWidget.R$drawable
+co.za.MobileDev.FlashLightWidget.R$id
+co.za.MobileDev.FlashLightWidget.R$layout
+co.za.MobileDev.FlashLightWidget.R$string
+co.za.MobileDev.FlashLightWidget.R$xml

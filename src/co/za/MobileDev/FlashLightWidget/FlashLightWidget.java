@@ -52,7 +52,7 @@ public class FlashLightWidget extends AppWidgetProvider {
                     e.printStackTrace();
                 }
 
-                remoteViews.setImageViewResource(R.id.imageButtonFlash, R.drawable.flash);
+                remoteViews.setImageViewResource(R.id.imageButtonFlash, R.drawable.torchon);
                 _status = false;
             }  else {
                 try {
@@ -66,7 +66,7 @@ public class FlashLightWidget extends AppWidgetProvider {
                     e.printStackTrace();
                 }
 
-                remoteViews.setImageViewResource(R.id.imageButtonFlash, R.drawable.flashoff);
+                remoteViews.setImageViewResource(R.id.imageButtonFlash, R.drawable.torchoff);
                 _status = true;
             }
 

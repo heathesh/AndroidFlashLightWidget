@@ -1,0 +1,10 @@
+co.za.MobileDev.FlashLightWidget.FlashLightWidget
+co.za.MobileDev.FlashLightWidget.FlashLightWidget: FlashLightWidget()
+co.za.MobileDev.FlashLightWidget.R$drawable: int ic_launcher
+co.za.MobileDev.FlashLightWidget.R$drawable: int torchoff
+co.za.MobileDev.FlashLightWidget.R$drawable: int torchon
+co.za.MobileDev.FlashLightWidget.R$id: int imageButtonFlash
+co.za.MobileDev.FlashLightWidget.R$id: int relativeLayoutMain
+co.za.MobileDev.FlashLightWidget.R$layout: int main
+co.za.MobileDev.FlashLightWidget.R$string: int app_name
+co.za.MobileDev.FlashLightWidget.R$xml: int flashlight_widget_provider

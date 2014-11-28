@@ -1,0 +1,6 @@
+co.za.MobileDev.FlashLightWidget.FlashLightWidget -> co.za.MobileDev.FlashLightWidget.FlashLightWidget:
+    boolean _status -> a
+    android.hardware.Camera _camera -> b
+    void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[]) -> onUpdate
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    android.app.PendingIntent getPendingSelfIntent(android.content.Context,java.lang.String) -> a

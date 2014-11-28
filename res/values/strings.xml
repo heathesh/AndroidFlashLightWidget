@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FlashLightWidget</string>
-    <string name="no_camera">No camera found</string>
-    <string name="no_flash">No flash found</string>
+    <string name="app_name">Flash Light Widget</string>
 </resources>
